@@ -14,8 +14,6 @@ var isArmstrong = function (x) {
     sum = sum + Math.pow(ld, xLength);
     x = Math.floor(x / 10);
   }
-  console.log("sum", sum);
-  console.log("original", original);
   return sum === original;
 };
 
