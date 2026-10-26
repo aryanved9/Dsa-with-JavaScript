@@ -12,13 +12,15 @@ function moveZeroes(nums) {
     }
   }
 
+  if (j === -1) return;
+
   for (let i = j + 1; i < nums.length; i++) {
-    if(nums[i] !== 0){
-        [nums[j],nums[i]] = [nums[i], nums[j]]
-        j++
+    if (nums[i] !== 0) {
+      [nums[j], nums[i]] = [nums[i], nums[j]];
+      j++;
     }
   }
-  return nums
+  return nums;
 }
 
 const testCases = [
